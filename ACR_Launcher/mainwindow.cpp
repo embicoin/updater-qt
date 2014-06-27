@@ -43,9 +43,9 @@ void MainWindow::on_tW_mainTabs_selected(const QString &arg1)
         ui->list_installed_mods->clear();
         ui->list_installed_mods->addItems(mw->installedMods(false));
     } else {
-        foreach (QListWidgetItem *i, ui->list_installed_) {
+       /* foreach (QListWidgetItem *i, ui->list_installed_) {
             ui->list_installed_mods->removeItemWidget(i);
-        }
+        }*/
         ui->list_installed_mods->setEnabled(false);
         ui->list_installed_mods->addItem("No installed mods...");
     }
